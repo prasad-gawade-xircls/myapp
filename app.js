@@ -2,31 +2,32 @@ import Express from "express"
 const app = Express()
 const port = 4000
 
-app.get('/', (req, res) => {
-    res.send('hello')
-})
-
-app.get('/info', (req, res) => {
+app.get('/jokes', (req, res) => {
     res.send([
         {
             id: "1",
-            name: "abc",
-            desc: "this is abc"
+            name: "joke1",
+            desc: "this is joke1"
         },
         {
             id: "2",
-            name: "efg",
-            desc: "this is efg"
+            name: "joke2",
+            desc: "this is joke2"
         },
         {
             id: "3",
-            name: "pqr",
-            desc: "this is pqr"
+            name: "joke3",
+            desc: "this is joke3"
         },
         {
             id: "4",
-            name: "xyz",
-            desc: "this is xyz"
+            name: "joke4",
+            desc: "this is joke4"
+        },
+        {
+            id: "5",
+            name: "joke5",
+            desc: "this is joke5"
         }
     ])
 })
